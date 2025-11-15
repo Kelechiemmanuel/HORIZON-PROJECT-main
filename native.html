@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/nav.css">
+<link rel="stylesheet" href="css/slide.css">
+<link rel="stylesheet" href="css/general.css">
+<title>Document</title>
+</head>
+
+<body>
+    <header class="navigation-bar">
+    <nav class="nav-container">
+        <div class="img-container">
+            <img src="images/logo.png" alt="" class="img-logo">
+        </div>
+        <ul class="nav-items">
+            <li class="nav-list">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">Events</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">Products</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">Boards</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">DOM</a>
+            </li>
+        </ul>
+
+        <!-- <div class="cart-icon" onclick="toggleCart()">
+            🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div> -->
+
+        <div class="cart-icon" onclick="openSlide()">🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+
+        <div class="hamburger-container" onclick="openNav()">
+            <p class="hamburger">&#9776;</p>
+        </div>
+    </nav>
+</header>
+
+<div class="slide-container" id="myNav">
+    <button class="closebtn" onclick="closeNav()">&times;</button>
+
+    <ul class="slide-menu-container">
+        <li class="nav-list">
+            <a href="#" class="nav-link">Home</a>
+        </li>
+        <li class="nav-list">
+            <a href="#" class="nav-link">Events</a>
+        </li>
+        <li class="nav-list">
+            <a href="#" class="nav-link">Products</a>
+        </li>
+        <li class="nav-list">
+            <a href="#" class="nav-link">Boards</a>
+        </li>
+        <li class="nav-list">
+            <a href="#" class="nav-link">Contacts</a>
+        </li>
+        <li class="nav-list">
+            <a href="#" class="nav-link">DOM</a>
+        </li>
+    </ul>
+</div>
+<section class="women-section">
+    <div class="women-container">
+            <button class="woman-btn" onclick="womenOpen()">Women Collection</button>
+        <button class="woman-btn" onclick="menOpen()">Men Collection</button>
+    </div>
+</section>
+
+<section class="video-grid" id="women-grid">
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-17.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-14.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-15.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-13.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-12.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-11.png" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-10.png" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-09.png" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-08.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-07.png" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-06.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-05.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-04.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-03.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-02.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/net-wo-17.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- men section -->
+<section class="video-grid" id="men-grid" style="display: none;">
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-02.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-03.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-04.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-05.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-05.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-06.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-07.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-08.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-09.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-10.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/nativ-11.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-12.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-13.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-14.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-15.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video-preview">
+        <div class="thumbnail-row">
+            <img class="thumbnail" src="images/native-16.jpg" alt="">
+            <div class="image-text">
+                <button class="add-to-cart"
+                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+            </div>
+        </div>
+        <div class="video-info-grid">
+            <div class="video-info">
+                <p class="video-title">
+                    RHEMA DRESS
+                </p>
+                <p class="video-author">
+                    ₦60,000.00
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="js/slide.js"></script>
+<script src="js/carpet.js"></script>
+</body>
+
+</html>

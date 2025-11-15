@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.main-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    margin-top: 95px;
+}
+
+.woman-btn {
+    border: 2px solid lightgray;
+    color: gray;
+    border-radius: 3px;
+    padding: 10px 10px 10px 10px;
+    outline: none;
+    background: none;
+
+}
+
+.image-container {
+    position: relative;
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.image-container:hover::after {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.thumbnail-row {
+    height: 500px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.thumbnail-row::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+    z-index: 1;
+}
+
+.thumbnail-row:hover::after {
+    background: rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.thumbnail-row:hover .thumbnail {
+    transform: translateY(-5px);
+}
+
+.thumbnail-row:hover {
+    transform: translateY(-5px);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.15);
+}
+
+.image-container:hover {
+    transform: translateY(-5px);
+}
+
+.container {
+    width: 350px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+}
+
+.image-text button {
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+
+}
+
+.image-text:hover button {
+    background-color: rgb(39, 98, 150);
+    opacity: 1;
+}
+
+
+.image-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
+}
+
+.thumbnail-row:hover .image-text {
+    opacity: 1;
+}
+
+.new-arrival {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 16px;
+    padding: 20px 150px 20px 150px;
+    row-gap: 40px;
+}
+
+.video-info {
+    text-align: center;
+}
+
+.women-section{
+    margin-top: 140px;
+}
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .hamburger-container {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .main-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2px;
+        column-gap: 2px;
+        margin-bottom: 100vh;
+    }
+
+    .container {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+    }
+
+    .video-preview {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-preview {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-items {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
