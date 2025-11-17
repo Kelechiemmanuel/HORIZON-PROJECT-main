@@ -6,46 +6,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Cinzelfamily=Playwrite+Mexico+Guides&display=swap"
     rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="css/nav.css">
-<link rel="stylesheet" href="css/slide.css">
-<link rel="stylesheet" href="css/general.css">
-<title>All Collection- NOXUS style</title>
+<link rel="stylesheet" href="./css/general2.css">
+<link rel="stylesheet" href="css/msg.css">
+
+<title>Horizon Atelier - Home</title>
 </head>
 
 <body>
 <header class="navigation-bar">
     <nav class="nav-container">
-        <div class="img-container">
-            <img src="images/logo.png" alt="" class="img-logo">
-        </div>
+              <div class="img-container">
+                <img src="images/logo (2).png" alt="" class="img-logo">
+            </div>
         <ul class="nav-items">
             <li class="nav-list">
-                <a href="#" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Events</a>
+                <a href="events.html" class="nav-link">Events</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Products</a>
+                <a href="products.html" class="nav-link">Products</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Boards</a>
+                <a href="board.html" class="nav-link">Boards</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Contacts</a>
+                <a href="contact.html" class="nav-link">Contacts</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">DOM</a>
+                <a href="dom.html" class="nav-link">DOM</a>
             </li>
         </ul>
-
-        <!-- <div class="cart-icon" onclick="toggleCart()">
-            🛒
-            <span class="cart-count" id="cart-count">0</span>
-        </div> -->
 
         <div class="cart-icon" onclick="openSlide()">🛒
             <span class="cart-count" id="cart-count">0</span>
@@ -62,1352 +58,156 @@
 
     <ul class="slide-menu-container">
         <li class="nav-list">
-            <a href="#" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Events</a>
+            <a href="events.html" class="nav-link">Events</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Products</a>
+            <a href="products.html" class="nav-link">Products</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Boards</a>
+            <a href="board.html" class="nav-link">Boards</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Contacts</a>
+            <a href="contact.html" class="nav-link">Contacts</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">DOM</a>
+            <a href="dom.html" class="nav-link">DOM</a>
         </li>
     </ul>
 </div>
 
 <main>
-    <section class="main-body">
-        <div class="container">
-            <div class="image-container">
-                <img src="images/net-wo-14.jpg" alt="">
-                <div class="image-text">
-                    <a href="native.html">Native Wears</a>
-                </div>
+    <section class="home-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Horizon Atelier</h1>
+            <p class="hero-caption"><em>Where elegance meets contemporary vision</em></p>
+            <div class="hero-actions">
+                <a href="index2.html" class="cta-button primary">Explore Collection</a>
+                <a href="about.html" class="cta-button secondary">Learn More</a>
             </div>
         </div>
-        <div class="container">
-            <div class="image-container">
-                <img src="images/wed-21.jpg" alt="">
-                <div class="image-text">
-                    <a href="wed.html">Wedding Wears</a>
-                </div>
-            </div>
+    </section>
+
+    <!-- site marquee: announcements under hero -->
+    <div class="site-marquee" aria-hidden="true">
+        <div class="marquee-inner">
+            <span>New arrivals • Tailoring appointments available • Free shipping on orders over ₦50,000</span>
         </div>
-        <div class="container">
-            <div class="image-container">
-                <img src="images/carpet-17.webp" alt="">
-                <div class="image-text">
-                    <a href="carpet.html">Red Carpet Wears</a>
-                </div>
-            </div>
+    </div>
+
+    <!-- About Us section (appears on scroll) -->
+    <section class="about-section" id="about">
+        <div class="about-inner">
+            <h2>About Us</h2>
+            <p>Horizon Atelier crafts bespoke and ready-to-wear pieces that blend tradition with modern design. Our expert tailors and designers deliver attention to detail, quality fabrics, and personalised fittings for every occasion.</p>
+            <a href="about.html" class="cta-link">Learn more</a>
         </div>
-        <div class="container">
-            <div class="image-container">
-                <img src="images/vintage-014.jpg" alt="">
-                <div class="image-text">
-                    <a href="vintage.html">Vintage Wears</a>
-                </div>
+    </section>
+
+    <section class="featured-section">
+        <h2>Featured Categories</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <a href="native.html"><img src="https://images.unsplash.com/photo-1659714838890-43a3ef681277?" alt="Native Wears"></a>
+                <h3>Native Wears</h3>
+                <p>Traditional meets modern</p>
             </div>
-        </div>
-        <div class="container">
-            <div class="image-container">
-                <img src="images/cas-wo-08.jpg" alt="">
-                <div class="image-text">
-                    <a href="casual.html">Casual Wears</a>
-                </div>
+            <div class="category-card">
+                <a href="casual.html"><img src="https://images.unsplash.com/photo-1583777256053-1ac2b4ea398f?" alt="Casual Wears"></a>
+                <h3>Casual Wears</h3>
+                <p>Everyday Freestyle</p>
+            </div>
+            <div class="category-card">
+                <a href="wed.html"><img src="https://images.unsplash.com/photo-1645827042168-4fb0cdd0bf7e?" alt="Wedding Wears"></a>
+                <h3>Wedding Wears</h3>
+                <p>Celebrate in style</p>
+            </div>
+            <div class="category-card">
+                <a href="carpet.html"><img src="https://images.unsplash.com/photo-1634632329171-29513d0fe639?" alt="Red Carpet"></a>
+                <h3>Red Carpet</h3>
+                <p>Glamour for events</p>
+            </div>
+            <div class="category-card">
+                <a href="vintage.html"><img src="https://images.unsplash.com/photo-1675875053102-bc894884c564?" alt="Vintage"></a>
+                <h3>Vintage Wears</h3>
+                <p>Timeless classics</p>
             </div>
         </div>
     </section>
 </main>
+<footer>
+    <div class="footer-content">
+        <div class="footer-links-group">
+            <ul>
+                <li><a href="/about.html">About Us</a></li>
+                </ul>
+        </div>
 
-<div class="new-arrival">
-    <h1>NEW ARRIVAL</h1>
-</div>
+        <div class="footer-cta">
+            <h3>Contact Us</h3>
+            <a href="mailto:your-email@fashionhouse.com" class="cta-button">Book an Appointment</a>
+        </div>
 
-<section class="video-grid" id="product-list">
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="Rhema Dress" data-price="120000" data-image="images/cas-w0-01.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-w0-01.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    RHEMA DRESS
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name=" Women office wear(Casual)" data-price="120000" data-image="images/cas-wo-02.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-wo-02.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    Women office wear(Casual)
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="Women office wear(Casual)" data-price="200000" data-image="images/cas-wo-03.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-wo-03.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    Women office wear(Casual)
-                </p>
-                <p class="video-author">
-                    ₦200,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="Women office wear(Casual)" data-price="120000" data-image="images/cas-wo-04.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-wo-04.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    RHEMA DRESS
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
+        <div class="footer-social">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="https://x.com/" target="_blank" aria-label="X (formerly Twitter)">
+                    <i class="fab fa-x-twitter"></i> 
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
             </div>
         </div>
     </div>
 
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="Women office wear(Casual)" data-price="120000" data-image="images/cas-wo-05.webp"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-wo-05.webp" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
+    <button class="pop-container" onclick="openMessage()">
+        help
+    </button>
+    <section class="message-pop-container" id="messageNav">
+        <button class="close-message" id="collaspe" onclick="closeMessage()">&times;</button>
+        <div class="message-container">
+        
+        <div class="message-head">
+            <h2>
+              Leave a message
+            </h2>
         </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    Women office wear(Casual)
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="Women office wear(Casual)" data-price="120000" data-image="images/cas-wo=06.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-wo=06.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    Women office wear(Casual)
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="Women office wear(Casual)" data-price="120000" data-image="images/cas-wo-07.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-wo-07.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                        Women office wear(Casual)
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="Women office wear(Casual)" data-price="120000" data-image="images/cas-wo-08.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/cas-wo-08.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                        Women office wear(Casual)
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="YAEL TWIST DRESS" data-price="60000" data-image="images/flay6.webp"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/flay6.webp" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    YAEL TWIST DRESS
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
+        <form id="messageForm" class="message-form">
+            <label class="labeling" for="Name">Name</label>
+            <input type="text" id="name" placeholder="Full Name">
+            <span style="text-align: center; color: red;" id="nameError"></span>
 
+            <label class="labeling" for="Email">Email</label>
+            <input type="email" id="email" placeholder="Email">
+            <span style="text-align: center; color: red;" id="emailError"></span>
+            
+            <label class="labeling" for="">Address</label>
+            <input type="text" id="address" placeholder="Delivery Address">
+            <span style="text-align: center; color: red;" id="addressError"></span>
 
-    <div class="video-preview">
+            <textarea name="message" id="message" placeholder="How can we help you?"  cols="1" rows="10"></textarea>
+            <span style="text-align: center; color: red ;" id="messageError"></span>
 
-        <div class="thumbnail-row" data-name=" LANA SET IN BLUE" data-price="60000" data-image="images/flay6.webp"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/panti1.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
+            <input type="submit" value="Send">
+        </form>
         </div>
+    </section>
 
-        <div class="video-info-grid">
-
-            <div class="video-info">
-                <p class="video-title">
-                    LANA SET IN BLUE
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Horizon Atelier. All rights reserved.</p>
     </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name=" LANA SET IN BLUE" data-price="60000" data-image="images/DSC_4983-copy.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/DSC_4983-copy.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    PRE ORDER UGO AKWETE DRESS IN GREEN
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="UGO AKWETE DRESS" data-price="60000" data-image="images/55648a2d-d351-4632-9218-5c2dcbd7ad21.jpeg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/55648a2d-d351-4632-9218-5c2dcbd7ad21.jpeg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    UGO AKWETE DRESS
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="TABITHA DRESS" data-price="60000" data-image="images/flay5.webp"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/flay5.webp" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    TABITHA DRESS
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="  SOLARA DRESS" data-price="120000" data-image="images/flay4.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/flay4.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    SOLARA DRESS
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row"  data-name="GODDESS DRESS IN PURPLE" data-price="120000" data-image="images/flay3.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/flay3.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    GODDESS DRESS IN PURPLE
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name=" LANA SET IN PINK" data-price="120000" data-image="images/flay1.jpeg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/flay1.jpeg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    LANA SET IN PINK
-                </p>
-                <p class="video-author">
-                    ₦120,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="LULU DENIM PANTS" data-price="75000" data-image="images/panti1.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/panti1.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    LULU DENIM PANTS
-                </p>
-                <p class="video-author">
-                    ₦75,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="LULU AKWETE PANTS" data-price="65000" data-image="images/pant2.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/pant2.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    LULU AKWETE PANTS
-                </p>
-                <p class="video-author">
-                    ₦65,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="LIMA 2.0 IN GREEN" data-price="75000" data-image="images/pant5.jpeg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/pant5.jpeg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    LIMA 2.0 IN GREEN
-                </p>
-                <p class="video-author">
-                    ₦75,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="LULU AKWETE PANTS" data-price="90000" data-image="images/pant4.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/pant4.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    LULU AKWETE PANTS
-                </p>
-                <p class="video-author">
-                    ₦90,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="FOLASADE DRESS IN CHARTREUSE" data-price="60000" data-image="images/blowse1.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/blowse1.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    FOLASADE DRESS IN CHARTREUSE
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="FOLASADE DRESS IN CHARTREUSE" data-price="60000" data-image="images/blowse2.jpeg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/blowse2.jpeg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    FOLASADE DRESS IN CHARTREUSE
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="FROBIN SHORT SET IN PURPLE" data-price="60000" data-image="images/blowse3.jpeg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/blowse3.jpeg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    FROBIN SHORT SET IN PURPLE
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/blowse4.jpeg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/blowse4.jpeg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-01.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-01.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-02.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-02.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-03.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-03.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-04.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-04.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-05.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-05.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-06.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-06.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-07.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-07.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/guys-08.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/guys-08.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-01.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-01.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-02.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-02.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-03.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-03.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-04.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-04.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-05.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-05.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-06.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-06.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-07.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-07.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-08.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-08.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-09.jpg" 
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-09.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-10.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-10.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    MEN OFFICE WEAR(CASUAL)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name=" VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-11.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-11.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="VINTAGE WEAR (MEN STYLE)" data-price="300000" data-image="images/v-men-12.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/v-men-12.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    VINTAGE WEAR (MEN STYLE)
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-001.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-001.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-002.webp"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-002.webp" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name=" CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-006.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-006.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                        CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-004.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-004.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-005.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-005.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name=" CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-003.webp"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-003.webp" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                        CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-007.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-007.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-008.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-008.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦20,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-014.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-014.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="MEN OFFICE WEAR(CASUAL)" data-price="300000" data-image="images/vintage-011.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-011.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-012.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-012.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-013.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-013.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-0019.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-0019.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-018.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-018.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦60,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-017.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-017.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦300,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="video-preview">
-        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000" data-image="images/vintage-016.jpg"
-            data-desc="Perfect match for you." data-des="Elegant long dress perfect for any occasion."
-            onclick="openProduct(this)">
-            <img class="thumbnail" src="images/vintage-016.jpg" alt="">
-            <div class="image-text">
-                <button class="add-to-cart">🛒</button>
-            </div>
-        </div>
-        <div class="video-info-grid">
-            <div class="video-info">
-                <p class="video-title">
-                    CHARR DRESS FOR WOMEN
-                </p>
-                <p class="video-author">
-                    ₦330,000.00
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="product-detail" id="product-detail">
-    <button onclick="backToList()">← Back to Shop</button>
-    <div class="detail-container" id="detail-container"></div>
-</section>
-
-<!-- Checkout Slide -->
-<div class="checkout-slide" id="checkoutSlide">
-    <div class="close-slide" onclick="closeSlide()">✖ Close</div>
-    <h2>Checkout</h2>
-    <div id="cart-items"></div>
-    <div class="total">Total: ₦<span id="cart-total">0</span></div>
-    <form id="checkoutForm" onsubmit="submitCheckout(event)">
-        <input type="text" id="name" placeholder="Full Name" required>
-        <input type="email" id="email" placeholder="Email" required>
-        <input type="text" id="address" placeholder="Delivery Address" required>
-        <select id="payment" required>
-            <option value="">Payment Method</option>
-            <option value="card">Card</option>
-            <option value="transfer">Bank Transfer</option>
-            <option value="cod">Cash on Delivery</option>
-        </select>
-        <button type="submit">Place Order</button>
-    </form>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="js/slide.js"></script>
+</footer>
 <script src="js/main.js"></script>
+<script src="js/msg.js"></script>
 </body>
 
 </html>

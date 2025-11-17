@@ -40,6 +40,7 @@ function openProduct(el) {
 function backToList() {
     document.getElementById("product-detail").classList.remove("active");
     document.querySelector(".video-grid").style.display = "grid";
+    document.getElementById("main-body").style.display = "flex";
 }
 
 // Quantity

@@ -14,23 +14,23 @@
     <header class="navigation-bar">
     <nav class="nav-container">
         <div class="img-container">
-            <img src="images/logo.png" alt="" class="img-logo">
+            <img src="images/logo (2).png" alt="" class="img-logo">
         </div>
         <ul class="nav-items">
             <li class="nav-list">
-                <a href="#" class="nav-link">Home</a>
+                <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Events</a>
+                <a href="events.html" class="nav-link">Events</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Products</a>
+                <a href="products.html" class="nav-link">Products</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Boards</a>
+                <a href="board.html" class="nav-link">Boards</a>
             </li>
             <li class="nav-list">
-                <a href="#" class="nav-link">Contacts</a>
+                <a href="contact.html" class="nav-link">Contacts</a>
             </li>
             <li class="nav-list">
                 <a href="#" class="nav-link">DOM</a>
@@ -57,19 +57,19 @@
 
     <ul class="slide-menu-container">
         <li class="nav-list">
-            <a href="#" class="nav-link">Home</a>
+            <a href="index.html" class="nav-link">Home</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Events</a>
+            <a href="events.html" class="nav-link">Events</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Products</a>
+            <a href="products.html" class="nav-link">Products</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Boards</a>
+            <a href="board.html" class="nav-link">Boards</a>
         </li>
         <li class="nav-list">
-            <a href="#" class="nav-link">Contacts</a>
+            <a href="contact.html" class="nav-link">Contacts</a>
         </li>
         <li class="nav-list">
             <a href="#" class="nav-link">DOM</a>
@@ -85,11 +85,11 @@
 
 <section class="video-grid" id="women-grid">
     <div class="video-preview">
-        <div class="thumbnail-row">
+        <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000"data-image="images/net-wo-17.jpg" data-desc="Perfect match for you."
+            data-des="Elegant long dress perfect for any occasion." onclick="openProduct(this)">
             <img class="thumbnail" src="images/net-wo-17.jpg" alt="">
             <div class="image-text">
-                <button class="add-to-cart"
-                    onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+                <button class="add-to-cart">🛒</button>
             </div>
         </div>
         <div class="video-info-grid">
@@ -697,6 +697,32 @@
         </div>
     </div>
 </section>
+
+<section class="product-detail" id="product-detail">
+    <button class="back-arrow" onclick="backToList()">← Back to Shop</button>
+    <div class="detail-container" id="detail-container"></div>
+</section>
+
+<!-- Checkout Slide -->
+<div class="checkout-slide" id="checkoutSlide">
+    <div class="close-slide" onclick="closeSlide()">✖ Close</div>
+    <h2>Checkout</h2>
+    <div id="cart-items"></div>
+    <div class="total">Total: ₦<span id="cart-total">0</span></div>
+    <form id="checkoutForm" onsubmit="submitCheckout(event)">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="text" id="address" placeholder="Delivery Address" required>
+        <select id="payment" required>
+            <option value="">Payment Method</option>
+            <option value="card">Card</option>
+            <option value="transfer">Bank Transfer</option>
+            <option value="cod">Cash on Delivery</option>
+        </select>
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
 
 
 

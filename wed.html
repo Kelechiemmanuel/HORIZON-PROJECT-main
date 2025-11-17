@@ -1,28 +1,100 @@
-                <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/slide.css">
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/msg.css">
     <title>Document</title>
 </head>
 
 <body>
+
+    <header class="navigation-bar">
+        <nav class="nav-container">
+            <div class="img-container">
+                <img src="images/logo (2).png" alt="" class="img-logo">
+            </div>
+            <ul class="nav-items">
+                <li class="nav-list">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-list">
+                    <a href="events.html" class="nav-link">Events</a>
+                </li>
+                <li class="nav-list">
+                    <a href="products.html" class="nav-link">Products</a>
+                </li>
+                <li class="nav-list">
+                    <a href="board.html" class="nav-link">Boards</a>
+                </li>
+                <li class="nav-list">
+                    <a href="contact.html" class="nav-link">Contacts</a>
+                </li>
+                <li class="nav-list">
+                    <a href="#" class="nav-link">DOM</a>
+                </li>
+            </ul>
+
+            <!-- <div class="cart-icon" onclick="toggleCart()">
+            🛒
+            <span class="cart-count" id="cart-count">0</span>
+        </div> -->
+
+            <div class="cart-icon" onclick="openSlide()">🛒
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+
+            <div class="hamburger-container" onclick="openNav()">
+                <p class="hamburger">&#9776;</p>
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide-container" id="myNav">
+        <button class="closebtn" onclick="closeNav()">&times;</button>
+
+        <ul class="slide-menu-container">
+            <li class="nav-list">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="events.html" class="nav-link">Events</a>
+            </li>
+            <li class="nav-list">
+                <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-list">
+                <a href="board.html" class="nav-link">Boards</a>
+            </li>
+            <li class="nav-list">
+                <a href="contact.html" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">DOM</a>
+            </li>
+        </ul>
+    </div>
+
     <section class="women-section">
         <div class="women-container">
-            <button>shop</button>
+            <button class="back-arrow" style="background: none; border: none; font-size: 17px;">
+                <a style=" text-decoration: none; color: black;" href="index.html">Home</a>
+            </button>
         </div>
     </section>
 
     <section class="video-grid">
         <div class="video-preview">
-            <div class="thumbnail-row">
+            <div class="thumbnail-row" data-name="CHARR DRESS FOR WOMEN" data-price="300000"
+                data-image="images/wed-04.jpg" data-desc="Perfect match for you."
+                data-des="Elegant long dress perfect for any occasion." onclick="openProduct(this)">
                 <img class="thumbnail" src="images/wed-04.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart"
-                        onclick="    addToCart('Minimalist Outfit: A clean and elegant design perfect for any occasion.', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -40,7 +112,8 @@
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-23.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -53,12 +126,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-08.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -71,12 +145,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-20.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -89,12 +164,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-12.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -107,12 +183,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-14.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -125,12 +202,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-19.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -143,12 +221,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-13.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -161,12 +240,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-21.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -179,12 +259,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-05.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -197,12 +278,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-17.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -215,12 +297,13 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
         <div class="video-preview">
             <div class="thumbnail-row">
                 <img class="thumbnail" src="images/wed-03.jpg" alt="">
                 <div class="image-text">
-                    <button class="add-to-cart" onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
+                    <button class="add-to-cart"
+                        onclick="addToCart('Minimalist Outfit', 45.99, 'images/flay6.webp',)">🛒</button>
                 </div>
             </div>
             <div class="video-info-grid">
@@ -233,8 +316,76 @@
                     </p>
                 </div>
             </div>
-        </div>      
+        </div>
     </section>
+
+    <section class="product-detail" id="product-detail">
+        <button class="back-arrow" onclick="backToList()">← Back to Shop</button>
+        <div class="detail-container" id="detail-container"></div>
+    </section>
+
+    <!-- Checkout Slide -->
+    <div class="checkout-slide" id="checkoutSlide">
+        <div class="close-slide" onclick="closeSlide()">✖ Close</div>
+        <h2>Checkout</h2>
+        <div id="cart-items"></div>
+        <div class="total">Total: ₦<span id="cart-total">0</span></div>
+        <form id="checkoutForm" onsubmit="submitCheckout(event)">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="address" placeholder="Delivery Address" required>
+            <select id="payment" required>
+                <option value="">Payment Method</option>
+                <option value="card">Card</option>
+                <option value="transfer">Bank Transfer</option>
+                <option value="cod">Cash on Delivery</option>
+            </select>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+
+    <button class="pop-container" onclick="openMessage()">
+        help
+    </button>
+    <section class="message-pop-container" id="messageNav">
+        <button class="close-message" id="collaspe" onclick="closeMessage()">&times;</button>
+        <div class="message-container">
+
+            <div class="message-head">
+                <h2>
+                    Leave a message
+                </h2>
+            </div>
+            <form id="messageForm" class="message-form">
+                <label class="labeling" for="Name">Name</label>
+                <input type="text" id="name" placeholder="Full Name">
+                <span style="text-align: center; color: red;" id="nameError"></span>
+
+                <label class="labeling" for="Email">Email</label>
+                <input type="email" id="email" placeholder="Email">
+                <span style="text-align: center; color: red;" id="emailError"></span>
+
+                <label class="labeling" for="">Address</label>
+                <input type="text" id="address" placeholder="Delivery Address">
+                <span style="text-align: center; color: red;" id="addressError"></span>
+
+                <textarea name="message" id="message" placeholder="How can we help you?" cols="1" rows="10"></textarea>
+                <span style="text-align: center; color: red ;" id="messageError"></span>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="js/slide.js"></script>
+    <script src="js/carpet.js"></script>
+    <script src="js/msg.js"></script>
 
 </body>
 

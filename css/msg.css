@@ -1,0 +1,82 @@
+.message-pop-container{
+    width: 400px;
+    overflow: hidden;
+    display: none;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 1ch 0px black;
+    position: fixed;
+    z-index: 100;
+    right: 20px;
+    bottom: 80px;
+}
+
+.message-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.message-form input{
+    margin: 10px;
+    padding: 10px;
+}
+
+form textarea{
+    width: 375px;
+    margin-left: 10px;
+}
+.message-head{
+    margin-top: 40px;
+    text-align: center;
+    background-color: orange;
+     /* box-shadow: 0 0 1ch 0 black; */
+     border-radius: 3px;
+     width: 100%;
+    margin-bottom: 20px;
+    padding: 1px;
+}
+
+.message-head h2{
+    color: #fff;
+}
+
+.labeling{
+    margin-left: 10px;
+}
+
+.close-message{
+    position: absolute;
+}
+
+.close-message{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    color: orange;
+    font-size: 30px;
+    cursor: pointer;
+     border-radius: 50%;
+    background-color: #090707;
+    border: 1px solid orange;
+}
+
+.pop-img{
+    width: 50px;
+}
+
+.pop-container{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    color: orange;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #090707;
+    border: 1px solid orange;
+}

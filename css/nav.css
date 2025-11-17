@@ -14,7 +14,8 @@
     align-items: center;
     padding: 10px 0 10px 0;
     top: 0;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.644);
+    backdrop-filter: blur(10px);
     width: 100%;
     z-index: 100;
     position: fixed;
@@ -49,7 +50,7 @@
     top: -17px;
     left: 5px;
     font-size: 15px;
-    background-color: rgb(39, 98, 150);
+    background-color: green;
     padding: 1px 5px 1px 5px;
     color: #fff;
     border-radius: 50%;
@@ -61,8 +62,20 @@
     justify-content: center;
     padding: 10px 25px 10px 25px;
     cursor: pointer;
-    background-color: rgb(39, 98, 150);
     border-radius: 5px;
+}
+.hamburger-container:hover {
+    background-color: transparent;
+    border: 2px solid #ffd700;
+}
+.hamburger{
+    color: #fff;
+}
+.section-divider {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ffe600,orange, transparent);
+    margin: 3rem 0;
 }
 
 .hamburger{
